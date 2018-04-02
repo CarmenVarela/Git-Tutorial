@@ -48,6 +48,7 @@ nSamples = ceil(fileinfo(1).bytes /datatypesize(intype) / nChannels);
 
 if method<2 & ~isempty(Periods)
     error('this method does not perform (yet) selective loading with Periods, use method 3 or 4. Bug me to implement it ! :)');
+    error('hola'); 
 end
 if method==3 & isempty(Periods)
     method=2;
